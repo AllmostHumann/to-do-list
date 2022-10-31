@@ -18,6 +18,11 @@
         render();
     };
 
+    const cleanItem = () => {
+        document.querySelector(".js-newTask").value = "";
+        document.querySelector(".js-task").focus();
+    };
+
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
@@ -78,6 +83,7 @@
         }
 
         addNewTask(newTaskContent);
+        cleanItem();
     };
 
     const init = () => {
