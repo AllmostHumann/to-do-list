@@ -8,7 +8,7 @@
 ## Introduction
 
 ```javascript
-console.log(I don't know what to do);
+console.log(what to do?);
 ```
 
 This is my third project made with <b>#YouCode course.</b> In next few months I will be gradually implement new features based on what I learnt during the course. 
