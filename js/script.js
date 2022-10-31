@@ -20,7 +20,7 @@
 
     const cleanItem = () => {
         document.querySelector(".js-newTask").value = "";
-        document.querySelector(".js-task").focus();
+        document.querySelector(".js-newTask").focus();
     };
 
     const removeTask = (taskIndex) => {
