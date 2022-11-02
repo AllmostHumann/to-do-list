@@ -9,7 +9,7 @@
         render();
     };
 
-    const cleanItem = () => {
+    const cleanInput = () => {
         document.querySelector(".js-newTask").value = "";
         document.querySelector(".js-newTask").focus();
     };
@@ -78,7 +78,7 @@
         }
 
         addNewTask(newTaskContent);
-        cleanItem();
+        cleanInput();
     };
 
     const init = () => {
