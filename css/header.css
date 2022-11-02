@@ -4,3 +4,12 @@
     display: block;
     margin: auto;
 }
+
+@media (max-width: 767px) {
+    .header {
+        font-weight: 700;
+        font-size: 25px;
+        display: block;
+        margin: auto;
+    }
+}
