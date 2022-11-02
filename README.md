@@ -1,6 +1,6 @@
 # Jakub Głuch - To do list
 
-<img src="https://i.imgur.com/JGsJMmk.png" width= 500px>
+<img src="https://i.imgur.com/JGsJMmk.png">
 
 
 ## Demo https://allmosthumann.github.io/to-do-list/
