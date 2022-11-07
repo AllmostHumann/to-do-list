@@ -2,17 +2,17 @@
     let tasks = [];
     let hideDoneTasks = false;
 
+    const cleanInput = () => {
+        document.querySelector(".js-newTask").value = "";
+        document.querySelector(".js-newTask").focus();
+    };
+
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
             { content: newTaskContent, }
         ];
         render();
-    };
-
-    const cleanInput = () => {
-        document.querySelector(".js-newTask").value = "";
-        document.querySelector(".js-newTask").focus();
     };
 
     const removeTask = (taskIndex) => {
