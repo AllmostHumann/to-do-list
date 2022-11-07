@@ -1,11 +1,12 @@
 {
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent, }
+        ];
         render();
     };
 
@@ -42,28 +43,38 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-            <li class="taskList__item">
-            <button class="taskList__button__done js-done">
-            ${task.done ? "✔" : ""}
-            </button>
-            <p
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-            ${task.content}
-            </p>
-            <button class="taskList__button__remove js-remove">
-            🗑
-            </button>
-            </li>
-            `;
+        <li class="taskList__item">
+        <button class="taskList__button__done js-done">
+        ${task.done ? "✔" : ""}
+        </button>
+        <p
+        ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
+        ${task.content}
+        </p>
+        <button class="taskList__button__remove js-remove">
+        🗑
+        </button>
+        </li>
+        `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
 
+    const renderButtons = () => { };
+
+    const bindButtonsEvents = () => { };
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
+
+        bindButtonsEvents();
         bindEvents();
 
     };
