@@ -58,7 +58,7 @@
         let htmlString = "";
 
         for (const task of tasks) {
-        htmlString += `
+            htmlString += `
         <li class="taskList__item">
 
 
@@ -85,7 +85,24 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => { };
+    const renderButtons = () => {
+        const buttons = document.querySelector(".js-buttons");
+
+        if (!tasks.length) {
+            buttons.innerHTML = "";
+            return;
+        };
+
+        buttons.innerHTML = `
+        <button class="taskList__button js-toggleHideDoneButton">
+        ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+        </button>
+        <button class="taskList__button js-markAllDoneButton">
+        ${tasks.every(({ done }) => done) ? "disabled" : ""}
+        Ukończ wszystkie
+        </button>
+        `;
+    };
 
     const bindButtonsEvents = () => { };
 
