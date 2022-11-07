@@ -30,9 +30,9 @@
         Lista zadań
     </header>
     <main>
-        <h2 class="form__header">
-            Dodaj nowe zadanie
-        </h2>
+            <h2 class="form__header">
+                Dodaj nowe zadanie
+            </h2>
         <form class="form js-form">
             <input class="form__newTask js-newTask" placeholder="Co jest do zrobienia?" autofocus required>
             <button class="form__button">
@@ -42,9 +42,19 @@
     </main>
 
     <section>
+        <div>
         <h2 class="taskList__header">
             Lista zadań
         </h2>
+        <div class="taskList__buttons">
+            <button class="taskList__buttonHideDone">
+                Ukryj ukończone
+            </button>
+            <button class="taskList__buttonDoneAll">
+                Ukończ wszystkie
+            </button>
+        </div>
+    </div>
         <ul class="taskList js-tasks"></ul>
     </section>
 </body>
