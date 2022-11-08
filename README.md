@@ -1,6 +1,6 @@
 # Jakub Głuch - To do list
 
-<img src="https://i.imgur.com/JGsJMmk.png" width= 500px>
+![To do list Demo](gif/Animation.gif)
 
 
 ## Demo https://allmosthumann.github.io/to-do-list/
@@ -21,4 +21,12 @@ Cheers!
 
 ## Description 
 
-Simple to do list. 
+Simple to do list, with mobile devices responsiveness.
+
+## Technologies
+- BEM
+- ES6
+- Grid
+- Flex
+
+
