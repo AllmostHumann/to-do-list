@@ -74,22 +74,18 @@
             htmlString += `
         <li class="taskList__item">
 
-
         <button class="taskList__button__done js-done">
         ${task.done ? "✔" : ""}
         </button>
-
 
         <span
         ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
         ${task.content}
         </span>
 
-
         <button class="taskList__button__remove js-remove">
         🗑
         </button>
-
 
         </li>
         `;
