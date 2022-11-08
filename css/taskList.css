@@ -29,6 +29,11 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 1s;
+}
+
+.taskList__button__done:hover {
+    transform: scale(1.15);
 }
 
 .taskList__button__remove {
@@ -39,6 +44,11 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 1s;
+}
+
+.taskList__button__remove:hover {
+    transform: scale(1.15);
 }
 
 .taskList__section {
