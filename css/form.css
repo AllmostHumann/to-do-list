@@ -28,6 +28,12 @@
 }
 
 @media (max-width: 767px) {
+    .form__button:hover {
+        transform: scale(1.03);
+    }
+}
+
+@media (max-width: 767px) {
     .form__button {
         width: 100%;
     }
