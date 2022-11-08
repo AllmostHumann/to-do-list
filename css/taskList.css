@@ -65,6 +65,10 @@
     transition: color 0.5s;
 }
 
+.taskList__button:hover {
+    color: rgba(0, 128, 128, 0.822);
+}
+
 .taskList__button:disabled {
     color: rgb(204, 204, 204);
 }
