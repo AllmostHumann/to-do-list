@@ -15,23 +15,23 @@
         render();
     };
 
-    const removeTask = (taskIndex) => {
+    const removeTask = (Index) => {
         tasks = [
-            ...tasks.slice(0, taskIndex),
-            ...tasks.slice(taskIndex + 1),
+            ...tasks.slice(0, Index),
+            ...tasks.slice(Index + 1),
         ];
         render();
     };
 
-    const toggleTaskDone = (taskIndex) => {
+    const toggleTaskDone = (Index) => {
 
         tasks = [
-            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(0, Index),
             {
-                ...tasks[taskIndex],
-                done: !tasks[taskIndex].done,
+                ...tasks[Index],
+                done: !tasks[Index].done,
             },
-            ...tasks.slice(taskIndex + 1),
+            ...tasks.slice(Index + 1),
         ];
         render();
     };
