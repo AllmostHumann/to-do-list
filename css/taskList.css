@@ -62,9 +62,10 @@
     padding: 10px;
 }
 
-.taskList__buttons {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 767px) {
+    .taskList__section {
+        grid-template-columns: 1fr; 
+    }
 }
 
 .taskList__button {
@@ -73,6 +74,19 @@
     color: teal;
     margin: 0 20px 0 0;
     transition: color 0.5s;
+}
+
+.taskList__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .taskList__buttons {
+        flex-basis: auto;
+        margin: 10px;
+        justify-content: center;
+    }
 }
 
 .taskList__button:hover {
