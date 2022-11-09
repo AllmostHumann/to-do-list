@@ -71,24 +71,21 @@
         let htmlString = "";
 
         for (const task of tasks) {
-            htmlString += `
+        htmlString += 
+        `
         <li class="taskList__item ${task.done && hideDoneTasks ? "taskList__item--hidden" : ""}">
-
         <button class="taskList__button__done js-done">
         ${task.done ? "✔" : ""}
         </button>
-
-
         <span class="taskList__content ${task.done ? "taskList__item--done" : ""}">
         ${task.content}
         </span>
-
         <button class="taskList__button__remove js-remove">
         🗑
         </button>
-
         </li>
         `;
+        
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
