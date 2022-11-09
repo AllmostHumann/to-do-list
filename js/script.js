@@ -24,7 +24,6 @@
     };
 
     const toggleTaskDone = (index) => {
-
         tasks = [
             ...tasks.slice(0, index),
             {
@@ -85,7 +84,7 @@
         </button>
         </li>
         `;
-        
+
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -99,7 +98,8 @@
             return;
         };
 
-        buttons.innerHTML = `
+        buttons.innerHTML = 
+        `
         <button class="taskList__button js-toggleHideDoneButton">
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
