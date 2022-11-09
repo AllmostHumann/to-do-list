@@ -29,6 +29,11 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 1s;
+}
+
+.taskList__button__done:hover {
+    background-color: hsl(101, 99%, 36%);
 }
 
 .taskList__button__remove {
@@ -39,6 +44,11 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 1s;
+}
+
+.taskList__button__remove:hover {
+    background-color: rgb(255, 70, 70);
 }
 
 .taskList__section {
